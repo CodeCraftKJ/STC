@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STC.Storage", "STC.Storage\STC.Storage.csproj", "{A130AA1D-EF58-4EB0-AA50-3662C99E12F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STC.Service", "STC.Service\STC.Service.csproj", "{8C029718-ADEF-480C-9C5C-3FDA99A43FCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A130AA1D-EF58-4EB0-AA50-3662C99E12F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A130AA1D-EF58-4EB0-AA50-3662C99E12F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A130AA1D-EF58-4EB0-AA50-3662C99E12F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A130AA1D-EF58-4EB0-AA50-3662C99E12F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C029718-ADEF-480C-9C5C-3FDA99A43FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C029718-ADEF-480C-9C5C-3FDA99A43FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C029718-ADEF-480C-9C5C-3FDA99A43FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C029718-ADEF-480C-9C5C-3FDA99A43FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A89CCE71-6023-4B8F-B0A2-069D5E311A1B}
+	EndGlobalSection
+EndGlobal
