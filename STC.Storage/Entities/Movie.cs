@@ -10,14 +10,15 @@ namespace STC.Storage.Entities
     {
         protected Movie() { }
 
-        public Movie(string name, int year, int timeMinutes, string description)
+        public Movie(string name, int year, int timeMinutes, string description, long categoryId)
         {
             Name = name;
             Year = year;
             TimeMinutes = timeMinutes;
             Description = description;
             IsActive = true;
-            MovieCategories = [];
+            CategoryId = categoryId;
+            MovieCategories = new List<MovieCategory>();
         }
 
         [Required]
@@ -39,6 +40,9 @@ namespace STC.Storage.Entities
         [Required]
         public bool IsActive { get; set; }
 
-        public ICollection<MovieCategory> MovieCategories { get; set; } = [];
+        [Required]
+        public long CategoryId { get; set; }
+
+        public ICollection<MovieCategory> MovieCategories { get; set; }
     }
 }
