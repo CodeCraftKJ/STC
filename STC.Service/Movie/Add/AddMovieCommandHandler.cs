@@ -1,8 +1,9 @@
 ﻿using STC.Service.Command;
+using STC.Service.Movie.Add;
 
 namespace STC.Service.Movie.Add
 {
-    public sealed class AddMovieCommandHandler : ICommandHandler<AddMovieCommand>
+    public sealed class AddMovieCommandHandler : ICommandHandler<AddMovieCommand, Result>
     {
         private readonly IMovieRepository _repository;
 
@@ -22,13 +23,13 @@ namespace STC.Service.Movie.Add
             var isExist = _repository.IsMovieExist(command.Name, command.Year);
             if (isExist)
             {
-                return Result.Fail("This Movie already exists");
+                return Result.Fail("This movie already exists.");
             }
 
             var movie = new Storage.Entities.Movie(command.Name, command.Year, command.SeanceTime, command.Description, command.CategoryId);
             _repository.AddMovie(movie);
 
-            return Result.OK();
+            return Result.OK("Movie added successfully.");
         }
     }
 }

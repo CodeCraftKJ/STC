@@ -2,7 +2,7 @@
 
 namespace STC.Service.Movie.Delete
 {
-    public sealed class DeleteMovieCommandHandler : ICommandHandler<DeleteMovieCommand>
+    public sealed class DeleteMovieCommandHandler : ICommandHandler<DeleteMovieCommand, Result>
     {
         private readonly IMovieRepository _repository;
 
@@ -18,8 +18,9 @@ namespace STC.Service.Movie.Delete
             {
                 return Result.Fail("Movie does not exist.");
             }
+
             _repository.RemoveMovie(command.Id);
-            return Result.OK();
+            return Result.OK("Movie deleted successfully.");
         }
     }
 }

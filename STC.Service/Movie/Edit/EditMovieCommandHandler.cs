@@ -2,7 +2,7 @@
 
 namespace STC.Service.Movie.Edit
 {
-    public sealed class EditMovieCommandHandler : ICommandHandler<EditMovieCommand>
+    public sealed class EditMovieCommandHandler : ICommandHandler<EditMovieCommand,Result>
     {
         private readonly IMovieRepository _repository;
 
